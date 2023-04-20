@@ -13,20 +13,18 @@ class _HomeState extends State<Home> {
     return Material(
         color: const Color(0xfffefaf5),
         child: Align(
-          alignment: Alignment.centerLeft,
+          alignment: Alignment.topLeft,
           child: Padding(
             padding: const EdgeInsets.all(13.0),
             child: Form(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
               Image.asset(
                 'assets/images/Login.png',
                 alignment: Alignment.centerLeft,
                 height: 150,
                 width: 200,
               ),
-              Text(
+              const Text(
                 "Hello Alex,",
                 style: TextStyle(
                   fontSize: 25.0,
@@ -34,10 +32,10 @@ class _HomeState extends State<Home> {
                   color: Colors.orange,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
-              Text(
+              const Text(
                 "Your van -  VN54 UTD",
                 style: TextStyle(
                   fontSize: 25.0,
@@ -45,7 +43,7 @@ class _HomeState extends State<Home> {
                   color: Colors.orange,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Align(
@@ -55,7 +53,7 @@ class _HomeState extends State<Home> {
                     Container(
                       height: 200.0,
                       width: 170.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         gradient: LinearGradient(
                           colors: [Color(0xFFf5b936), Color(0xFFf2e6a3)],
                           begin: Alignment.topLeft,
@@ -63,48 +61,50 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                        Icon(
+                            Icon(
                           Icons.check_circle,
                           color: Colors.green,
-                        ),SizedBox(
+                        ),
+                         const SizedBox(
                           height: 15.0,
                         ),
-                        Text('All set.Last completed on 23-5-2022',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.green,
-                              fontSize: 13.0,),),
-
+                        Text(
+                          'All set.Last completed on 23-5-2022',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green,
+                            fontSize: 13.0,
+                          ),
+                        ),
                         SizedBox(
                           height: 35.0,
                         ),
-                        Text('Vehicle Checklist',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.brown,
-                          fontSize: 25.0,
-                        ),),
-
+                        Text(
+                          'Vehicle Checklist',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.brown,
+                            fontSize: 25.0,
+                          ),
+                        ),
                       ]),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15.0,
                     ),
                     Container(
                       height: 200.0,
                       width: 170.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         gradient: LinearGradient(
                           colors: [Color(0xFFf5b936), Color(0xFFf2e6a3)],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                         ),
                       ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                         Icon(
                           Icons.change_circle,
                           color: Colors.red,
@@ -112,22 +112,25 @@ class _HomeState extends State<Home> {
                         SizedBox(
                           height: 15.0,
                         ),
-                        Text('Pending to be completed for this week.',
+                        Text(
+                          'Pending to be completed for this week.',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.red,
-                            fontSize: 13.0,),),
-
+                            fontSize: 13.0,
+                          ),
+                        ),
                         SizedBox(
                           height: 25.0,
                         ),
-                        Text('Van    Equipment Checklist',
+                        Text(
+                          'Van    Equipment Checklist',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.brown,
                             fontSize: 25.0,
-                          ),),
-
+                          ),
+                        ),
                       ]),
                     ),
                   ],

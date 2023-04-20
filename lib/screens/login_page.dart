@@ -53,24 +53,26 @@ class _LoginPageState extends State<LoginPage> {
                 }
               },
               decoration: const InputDecoration(
-                  filled: true,
-                  fillColor: Colors.white,
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.orange, width: 2.0),
-                  ),
-                  labelText: "Email Address"),
+                filled: true,
+                fillColor: Colors.white,
+                labelText: "Email Address",
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.orange, width: 2.0),
+                ),
+              ),
             ),
             const Padding(
               padding: EdgeInsets.only(top: 20.0),
             ),
             TextFormField(
               decoration: const InputDecoration(
-                  filled: true,
-                  fillColor: Colors.white,
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.orange, width: 2.0),
-                  ),
-                  labelText: "Password"),
+                filled: true,
+                fillColor: Colors.white,
+                labelText: "Password",
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.orange, width: 2.0),
+                ),
+              ),
               obscureText: true,
             ),
             Row(children: [
@@ -122,12 +124,12 @@ class _LoginPageState extends State<LoginPage> {
                 if (formKey.currentState!.validate()) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MyNavigationBar()
-                    ),
+                    MaterialPageRoute(builder: (context) => MyNavigationBar()),
                   );
                 }
               },
-            )]),
+            )
+          ]),
         ),
       ),
     );
@@ -139,5 +141,3 @@ class _LoginPageState extends State<LoginPage> {
     return regExp.hasMatch(value);
   }
 }
-
-
